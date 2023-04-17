@@ -1,0 +1,8 @@
+D:\.NET\Day10\Collections_Listdemo\Collections_Listdemo\bin\Debug\Collections_Listdemo.exe.config
+D:\.NET\Day10\Collections_Listdemo\Collections_Listdemo\bin\Debug\Collections_Listdemo.exe
+D:\.NET\Day10\Collections_Listdemo\Collections_Listdemo\bin\Debug\Collections_Listdemo.pdb
+D:\.NET\Day10\Collections_Listdemo\Collections_Listdemo\obj\Debug\Collections_Listdemo.csproj.AssemblyReference.cache
+D:\.NET\Day10\Collections_Listdemo\Collections_Listdemo\obj\Debug\Collections_Listdemo.csproj.SuggestedBindingRedirects.cache
+D:\.NET\Day10\Collections_Listdemo\Collections_Listdemo\obj\Debug\Collections_Listdemo.csproj.CoreCompileInputs.cache
+D:\.NET\Day10\Collections_Listdemo\Collections_Listdemo\obj\Debug\Collections_Listdemo.exe
+D:\.NET\Day10\Collections_Listdemo\Collections_Listdemo\obj\Debug\Collections_Listdemo.pdb

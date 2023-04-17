@@ -1,8 +1,0 @@
-D:\.NET\Day10\ArrayListDEMO\ArrayListDEMO\bin\Debug\ArrayListDEMO.exe.config
-D:\.NET\Day10\ArrayListDEMO\ArrayListDEMO\bin\Debug\ArrayListDEMO.exe
-D:\.NET\Day10\ArrayListDEMO\ArrayListDEMO\bin\Debug\ArrayListDEMO.pdb
-D:\.NET\Day10\ArrayListDEMO\ArrayListDEMO\obj\Debug\CompareDemo.csproj.AssemblyReference.cache
-D:\.NET\Day10\ArrayListDEMO\ArrayListDEMO\obj\Debug\CompareDemo.csproj.SuggestedBindingRedirects.cache
-D:\.NET\Day10\ArrayListDEMO\ArrayListDEMO\obj\Debug\CompareDemo.csproj.CoreCompileInputs.cache
-D:\.NET\Day10\ArrayListDEMO\ArrayListDEMO\obj\Debug\ArrayListDEMO.exe
-D:\.NET\Day10\ArrayListDEMO\ArrayListDEMO\obj\Debug\ArrayListDEMO.pdb

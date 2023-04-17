@@ -1,8 +1,0 @@
-D:\.NET\Day10\IndexerDemo\IndexerDemo\bin\Debug\IndexerDemo.exe.config
-D:\.NET\Day10\IndexerDemo\IndexerDemo\bin\Debug\IndexerDemo.exe
-D:\.NET\Day10\IndexerDemo\IndexerDemo\bin\Debug\IndexerDemo.pdb
-D:\.NET\Day10\IndexerDemo\IndexerDemo\obj\Debug\IndexerDemo.csproj.AssemblyReference.cache
-D:\.NET\Day10\IndexerDemo\IndexerDemo\obj\Debug\IndexerDemo.csproj.SuggestedBindingRedirects.cache
-D:\.NET\Day10\IndexerDemo\IndexerDemo\obj\Debug\IndexerDemo.csproj.CoreCompileInputs.cache
-D:\.NET\Day10\IndexerDemo\IndexerDemo\obj\Debug\IndexerDemo.exe
-D:\.NET\Day10\IndexerDemo\IndexerDemo\obj\Debug\IndexerDemo.pdb

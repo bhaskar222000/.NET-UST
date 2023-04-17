@@ -1,8 +1,0 @@
-D:\.NET\Day10\Collections_Demo\Collections_Demo\bin\Debug\Collections_Demo.exe.config
-D:\.NET\Day10\Collections_Demo\Collections_Demo\bin\Debug\Collections_Demo.exe
-D:\.NET\Day10\Collections_Demo\Collections_Demo\bin\Debug\Collections_Demo.pdb
-D:\.NET\Day10\Collections_Demo\Collections_Demo\obj\Debug\Collections_Demo.csproj.AssemblyReference.cache
-D:\.NET\Day10\Collections_Demo\Collections_Demo\obj\Debug\Collections_Demo.csproj.SuggestedBindingRedirects.cache
-D:\.NET\Day10\Collections_Demo\Collections_Demo\obj\Debug\Collections_Demo.csproj.CoreCompileInputs.cache
-D:\.NET\Day10\Collections_Demo\Collections_Demo\obj\Debug\Collections_Demo.exe
-D:\.NET\Day10\Collections_Demo\Collections_Demo\obj\Debug\Collections_Demo.pdb

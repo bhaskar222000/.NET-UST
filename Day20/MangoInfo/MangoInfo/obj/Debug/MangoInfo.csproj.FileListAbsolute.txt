@@ -1,0 +1,8 @@
+D:\.NET\Day20\MangoInfo\MangoInfo\bin\Debug\MangoInfo.exe.config
+D:\.NET\Day20\MangoInfo\MangoInfo\bin\Debug\MangoInfo.exe
+D:\.NET\Day20\MangoInfo\MangoInfo\bin\Debug\MangoInfo.pdb
+D:\.NET\Day20\MangoInfo\MangoInfo\obj\Debug\MangoInfo.csproj.AssemblyReference.cache
+D:\.NET\Day20\MangoInfo\MangoInfo\obj\Debug\MangoInfo.csproj.SuggestedBindingRedirects.cache
+D:\.NET\Day20\MangoInfo\MangoInfo\obj\Debug\MangoInfo.csproj.CoreCompileInputs.cache
+D:\.NET\Day20\MangoInfo\MangoInfo\obj\Debug\MangoInfo.exe
+D:\.NET\Day20\MangoInfo\MangoInfo\obj\Debug\MangoInfo.pdb

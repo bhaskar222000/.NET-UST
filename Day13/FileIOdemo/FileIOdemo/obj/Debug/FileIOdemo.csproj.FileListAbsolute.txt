@@ -1,0 +1,8 @@
+D:\.NET\IO\Day13\FileIOdemo\FileIOdemo\bin\Debug\FileIOdemo.exe.config
+D:\.NET\IO\Day13\FileIOdemo\FileIOdemo\bin\Debug\FileIOdemo.exe
+D:\.NET\IO\Day13\FileIOdemo\FileIOdemo\bin\Debug\FileIOdemo.pdb
+D:\.NET\IO\Day13\FileIOdemo\FileIOdemo\obj\Debug\FileIOdemo.csproj.AssemblyReference.cache
+D:\.NET\IO\Day13\FileIOdemo\FileIOdemo\obj\Debug\FileIOdemo.csproj.SuggestedBindingRedirects.cache
+D:\.NET\IO\Day13\FileIOdemo\FileIOdemo\obj\Debug\FileIOdemo.csproj.CoreCompileInputs.cache
+D:\.NET\IO\Day13\FileIOdemo\FileIOdemo\obj\Debug\FileIOdemo.exe
+D:\.NET\IO\Day13\FileIOdemo\FileIOdemo\obj\Debug\FileIOdemo.pdb

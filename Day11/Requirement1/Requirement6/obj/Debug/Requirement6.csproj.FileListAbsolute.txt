@@ -1,0 +1,3 @@
+D:\.NET\Day11\Requirement1\Requirement6\obj\Debug\Requirement6.csproj.AssemblyReference.cache
+D:\.NET\Day11\Requirement1\Requirement6\obj\Debug\Requirement6.csproj.SuggestedBindingRedirects.cache
+D:\.NET\Day11\Requirement1\Requirement6\obj\Debug\Requirement6.csproj.CoreCompileInputs.cache

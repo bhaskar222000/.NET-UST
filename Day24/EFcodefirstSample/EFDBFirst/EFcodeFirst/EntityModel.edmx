@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="sqlAssgn2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Client_master">
+          <Key>
+            <PropertyRef Name="Clientno" />
+          </Key>
+          <Property Name="Clientno" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Address1" Type="varchar" MaxLength="30" />
+          <Property Name="Address2" Type="varchar" MaxLength="30" />
+          <Property Name="City" Type="varchar" MaxLength="15" />
+          <Property Name="Pincode" Type="numeric" Precision="8" Scale="0" />
+          <Property Name="State" Type="varchar" MaxLength="15" />
+          <Property Name="Baldue" Type="numeric" Precision="10" Scale="2" />
+        </EntityType>
+        <EntityType Name="Sales_order">
+          <Key>
+            <PropertyRef Name="Orderno" />
+          </Key>
+          <Property Name="Orderno" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="Clientno" Type="varchar" MaxLength="6" />
+          <Property Name="Orderdate" Type="date" />
+          <Property Name="Delyaddr" Type="varchar" MaxLength="30" />
+          <Property Name="Salesmanno" Type="varchar" MaxLength="6" />
+          <Property Name="Delytype" Type="char" MaxLength="1" />
+          <Property Name="Billedyn" Type="char" MaxLength="1" />
+          <Property Name="Delydate" Type="date" />
+          <Property Name="Orderstatus" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Salesman_master">
+          <Key>
+            <PropertyRef Name="Salesmanno" />
+          </Key>
+          <Property Name="Salesmanno" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="Salesmanname" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Address1" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Address2" Type="varchar" MaxLength="30" />
+          <Property Name="City" Type="varchar" MaxLength="20" />
+          <Property Name="Pincode" Type="numeric" Precision="8" Scale="0" />
+          <Property Name="State" Type="varchar" MaxLength="20" />
+          <Property Name="Salamt" Type="numeric" Precision="8" Scale="2" Nullable="false" />
+          <Property Name="Tgttoget" Type="numeric" Precision="6" Scale="2" Nullable="false" />
+          <Property Name="Ytdsales" Type="numeric" Precision="6" Scale="2" Nullable="false" />
+          <Property Name="Remarks" Type="varchar" MaxLength="60" />
+        </EntityType>
+        <Association Name="FK__Sales_ord__Clien__403A8C7D">
+          <End Role="Client_master" Type="Self.Client_master" Multiplicity="0..1" />
+          <End Role="Sales_order" Type="Self.Sales_order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Client_master">
+              <PropertyRef Name="Clientno" />
+            </Principal>
+            <Dependent Role="Sales_order">
+              <PropertyRef Name="Clientno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Sales_ord__Sales__412EB0B6">
+          <End Role="Salesman_master" Type="Self.Salesman_master" Multiplicity="0..1" />
+          <End Role="Sales_order" Type="Self.Sales_order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Salesman_master">
+              <PropertyRef Name="Salesmanno" />
+            </Principal>
+            <Dependent Role="Sales_order">
+              <PropertyRef Name="Salesmanno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="sqlAssgn2ModelStoreContainer">
+          <EntitySet Name="Client_master" EntityType="Self.Client_master" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sales_order" EntityType="Self.Sales_order" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Salesman_master" EntityType="Self.Salesman_master" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Sales_ord__Clien__403A8C7D" Association="Self.FK__Sales_ord__Clien__403A8C7D">
+            <End Role="Client_master" EntitySet="Client_master" />
+            <End Role="Sales_order" EntitySet="Sales_order" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Sales_ord__Sales__412EB0B6" Association="Self.FK__Sales_ord__Sales__412EB0B6">
+            <End Role="Salesman_master" EntitySet="Salesman_master" />
+            <End Role="Sales_order" EntitySet="Sales_order" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="sqlAssgn2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Client_master">
+          <Key>
+            <PropertyRef Name="Clientno" />
+          </Key>
+          <Property Name="Clientno" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Address1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Address2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Pincode" Type="Decimal" Precision="8" Scale="0" />
+          <Property Name="State" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Baldue" Type="Decimal" Precision="10" Scale="2" />
+          <NavigationProperty Name="Sales_order" Relationship="Self.FK__Sales_ord__Clien__403A8C7D" FromRole="Client_master" ToRole="Sales_order" />
+        </EntityType>
+        <EntityType Name="Sales_order">
+          <Key>
+            <PropertyRef Name="Orderno" />
+          </Key>
+          <Property Name="Orderno" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Clientno" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="Orderdate" Type="DateTime" Precision="0" />
+          <Property Name="Delyaddr" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Salesmanno" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="Delytype" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="Billedyn" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="Delydate" Type="DateTime" Precision="0" />
+          <Property Name="Orderstatus" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Client_master" Relationship="Self.FK__Sales_ord__Clien__403A8C7D" FromRole="Sales_order" ToRole="Client_master" />
+          <NavigationProperty Name="Salesman_master" Relationship="Self.FK__Sales_ord__Sales__412EB0B6" FromRole="Sales_order" ToRole="Salesman_master" />
+        </EntityType>
+        <EntityType Name="Salesman_master">
+          <Key>
+            <PropertyRef Name="Salesmanno" />
+          </Key>
+          <Property Name="Salesmanno" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Salesmanname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Address1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Address2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Pincode" Type="Decimal" Precision="8" Scale="0" />
+          <Property Name="State" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Salamt" Type="Decimal" Precision="8" Scale="2" Nullable="false" />
+          <Property Name="Tgttoget" Type="Decimal" Precision="6" Scale="2" Nullable="false" />
+          <Property Name="Ytdsales" Type="Decimal" Precision="6" Scale="2" Nullable="false" />
+          <Property Name="Remarks" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Sales_order" Relationship="Self.FK__Sales_ord__Sales__412EB0B6" FromRole="Salesman_master" ToRole="Sales_order" />
+        </EntityType>
+        <Association Name="FK__Sales_ord__Clien__403A8C7D">
+          <End Role="Client_master" Type="Self.Client_master" Multiplicity="0..1" />
+          <End Role="Sales_order" Type="Self.Sales_order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Client_master">
+              <PropertyRef Name="Clientno" />
+            </Principal>
+            <Dependent Role="Sales_order">
+              <PropertyRef Name="Clientno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Sales_ord__Sales__412EB0B6">
+          <End Role="Salesman_master" Type="Self.Salesman_master" Multiplicity="0..1" />
+          <End Role="Sales_order" Type="Self.Sales_order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Salesman_master">
+              <PropertyRef Name="Salesmanno" />
+            </Principal>
+            <Dependent Role="Sales_order">
+              <PropertyRef Name="Salesmanno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="sqlAssgn2Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Client_master" EntityType="Self.Client_master" />
+          <EntitySet Name="Sales_order" EntityType="Self.Sales_order" />
+          <EntitySet Name="Salesman_master" EntityType="Self.Salesman_master" />
+          <AssociationSet Name="FK__Sales_ord__Clien__403A8C7D" Association="Self.FK__Sales_ord__Clien__403A8C7D">
+            <End Role="Client_master" EntitySet="Client_master" />
+            <End Role="Sales_order" EntitySet="Sales_order" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Sales_ord__Sales__412EB0B6" Association="Self.FK__Sales_ord__Sales__412EB0B6">
+            <End Role="Salesman_master" EntitySet="Salesman_master" />
+            <End Role="Sales_order" EntitySet="Sales_order" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="sqlAssgn2ModelStoreContainer" CdmEntityContainer="sqlAssgn2Entities">
+          <EntitySetMapping Name="Client_master">
+            <EntityTypeMapping TypeName="sqlAssgn2Model.Client_master">
+              <MappingFragment StoreEntitySet="Client_master">
+                <ScalarProperty Name="Clientno" ColumnName="Clientno" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Baldue" ColumnName="Baldue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sales_order">
+            <EntityTypeMapping TypeName="sqlAssgn2Model.Sales_order">
+              <MappingFragment StoreEntitySet="Sales_order">
+                <ScalarProperty Name="Orderno" ColumnName="Orderno" />
+                <ScalarProperty Name="Clientno" ColumnName="Clientno" />
+                <ScalarProperty Name="Orderdate" ColumnName="Orderdate" />
+                <ScalarProperty Name="Delyaddr" ColumnName="Delyaddr" />
+                <ScalarProperty Name="Salesmanno" ColumnName="Salesmanno" />
+                <ScalarProperty Name="Delytype" ColumnName="Delytype" />
+                <ScalarProperty Name="Billedyn" ColumnName="Billedyn" />
+                <ScalarProperty Name="Delydate" ColumnName="Delydate" />
+                <ScalarProperty Name="Orderstatus" ColumnName="Orderstatus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Salesman_master">
+            <EntityTypeMapping TypeName="sqlAssgn2Model.Salesman_master">
+              <MappingFragment StoreEntitySet="Salesman_master">
+                <ScalarProperty Name="Salesmanno" ColumnName="Salesmanno" />
+                <ScalarProperty Name="Salesmanname" ColumnName="Salesmanname" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Salamt" ColumnName="Salamt" />
+                <ScalarProperty Name="Tgttoget" ColumnName="Tgttoget" />
+                <ScalarProperty Name="Ytdsales" ColumnName="Ytdsales" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

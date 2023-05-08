@@ -1,0 +1,19 @@
+what is assembly?
+Assembly is a precompiled chunk of .NET code that can be run by CLR. In other words, it is nothing but a single unit of deployment. 
+We have various types of assemblies such as DLL and EXE. If you add any library to our project it will become DLL. DLL stands for dynamic link library.
+
+Relation b/w assembly in c#?
+
+EXE:
+An exe always runs in its own address space i.e., It is a separate process.
+The purpose of an EXE is to launch a separate application of its own.
+
+DLL:
+A dll always needs a host exe to run. i.e., it can never run in its own address space.
+The purpose of a DLL is to have a collection of methods/classes which can be re-used from some other application.
+DLL is Microsoft's implementation of a shared library.
+
+The file format of DLL and exe is essentially the same. Windows recognizes the difference between DLL and EXE through PE Header in the file.
+
+
+Reflection in assembly.(Refer Some Online Sites)

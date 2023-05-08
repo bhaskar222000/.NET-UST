@@ -1,0 +1,8 @@
+D:\.NET\Day23\LinqSamples\LinqSamples\bin\Debug\LinqSamples.exe.config
+D:\.NET\Day23\LinqSamples\LinqSamples\bin\Debug\LinqSamples.exe
+D:\.NET\Day23\LinqSamples\LinqSamples\bin\Debug\LinqSamples.pdb
+D:\.NET\Day23\LinqSamples\LinqSamples\obj\Debug\LinqSamples.csproj.AssemblyReference.cache
+D:\.NET\Day23\LinqSamples\LinqSamples\obj\Debug\LinqSamples.csproj.SuggestedBindingRedirects.cache
+D:\.NET\Day23\LinqSamples\LinqSamples\obj\Debug\LinqSamples.csproj.CoreCompileInputs.cache
+D:\.NET\Day23\LinqSamples\LinqSamples\obj\Debug\LinqSamples.exe
+D:\.NET\Day23\LinqSamples\LinqSamples\obj\Debug\LinqSamples.pdb

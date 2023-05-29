@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table {        
+             border-collapse: collapse; 
+            }
+            table, th, td {
+             border: 1px solid black;
+             padding: 5px;
+            }
+           </style>
+          </head>
+    <body>
+    <script>
+        let arr=[1,2,3,4,5,6,7,8,9,10,55,65];
+        document.write(arr);
+         arr.reverse();
+        document.write("<br><br>",arr,"<br><br>");
+
+        for(let i=0;i<arr.length;i++){
+            if(arr[i]>50) {
+                document.writeln(arr[i]);
+            }
+            else
+            throw "exception:error"
+        }
+    
+      
+        let numbersTable = document.getElementById("numbersTable");
+
+        for (let i = 0; i < arr.length; i++) {
+
+        let row = numbersTable.insertRow(-1);
+
+        let evenCell = row.insertCell(0);
+
+        let oddCell = row.insertCell(1);
+
+        if (arr[i] % 2 === 0) {
+
+            evenCell.innerHTML = arr[i];
+
+        } else {
+
+            oddCell.innerHTML =arr[i];
+
+        }
+
+  }
+ 
+    </script>
+    <h2>Even Numbers and Odd Numbers</h2>
+          
+    <table id="numbersTable"> 
+     <tr></tr> 
+      <th>Even Numbers</th> 
+      <th>Odd Numbers</th> 
+     </tr>  
+    </table>
+    </body>
+
+</html>

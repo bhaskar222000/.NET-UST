@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+      <script>
+        const arr = [[1, 2], [3, 4], [5, 7], [3, 4]];
+
+        function instancesOfPair(array, a, b) {
+            let instances = 0;
+            for(let pair of arr) {
+                if (pair.includes(a) && pair.includes(b)) {
+                    instances++;
+                }
+            }
+            return instances;
+            }
+
+            document.write(instancesOfPair(arr, 3, 4));
+       </script>
+    </body>
+</html>

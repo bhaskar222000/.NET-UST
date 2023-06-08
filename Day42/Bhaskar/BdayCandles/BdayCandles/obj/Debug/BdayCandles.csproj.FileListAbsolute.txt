@@ -1,0 +1,8 @@
+D:\.NET\Day42\Bhaskar\BdayCandles\BdayCandles\bin\Debug\BdayCandles.exe.config
+D:\.NET\Day42\Bhaskar\BdayCandles\BdayCandles\bin\Debug\BdayCandles.exe
+D:\.NET\Day42\Bhaskar\BdayCandles\BdayCandles\bin\Debug\BdayCandles.pdb
+D:\.NET\Day42\Bhaskar\BdayCandles\BdayCandles\obj\Debug\BdayCandles.csproj.AssemblyReference.cache
+D:\.NET\Day42\Bhaskar\BdayCandles\BdayCandles\obj\Debug\BdayCandles.csproj.SuggestedBindingRedirects.cache
+D:\.NET\Day42\Bhaskar\BdayCandles\BdayCandles\obj\Debug\BdayCandles.csproj.CoreCompileInputs.cache
+D:\.NET\Day42\Bhaskar\BdayCandles\BdayCandles\obj\Debug\BdayCandles.exe
+D:\.NET\Day42\Bhaskar\BdayCandles\BdayCandles\obj\Debug\BdayCandles.pdb

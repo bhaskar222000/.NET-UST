@@ -1,0 +1,8 @@
+D:\.NET\Day42\Bhaskar\Ratioprob\Ratioprob\bin\Debug\Ratioprob.exe.config
+D:\.NET\Day42\Bhaskar\Ratioprob\Ratioprob\bin\Debug\Ratioprob.exe
+D:\.NET\Day42\Bhaskar\Ratioprob\Ratioprob\bin\Debug\Ratioprob.pdb
+D:\.NET\Day42\Bhaskar\Ratioprob\Ratioprob\obj\Debug\Ratioprob.csproj.AssemblyReference.cache
+D:\.NET\Day42\Bhaskar\Ratioprob\Ratioprob\obj\Debug\Ratioprob.csproj.SuggestedBindingRedirects.cache
+D:\.NET\Day42\Bhaskar\Ratioprob\Ratioprob\obj\Debug\Ratioprob.csproj.CoreCompileInputs.cache
+D:\.NET\Day42\Bhaskar\Ratioprob\Ratioprob\obj\Debug\Ratioprob.exe
+D:\.NET\Day42\Bhaskar\Ratioprob\Ratioprob\obj\Debug\Ratioprob.pdb

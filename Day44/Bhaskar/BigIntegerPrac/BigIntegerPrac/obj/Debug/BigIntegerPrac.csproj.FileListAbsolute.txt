@@ -1,0 +1,8 @@
+D:\.NET\Day44\Bhaskar\BigIntegerPrac\BigIntegerPrac\bin\Debug\BigIntegerPrac.exe.config
+D:\.NET\Day44\Bhaskar\BigIntegerPrac\BigIntegerPrac\bin\Debug\BigIntegerPrac.exe
+D:\.NET\Day44\Bhaskar\BigIntegerPrac\BigIntegerPrac\bin\Debug\BigIntegerPrac.pdb
+D:\.NET\Day44\Bhaskar\BigIntegerPrac\BigIntegerPrac\obj\Debug\BigIntegerPrac.csproj.AssemblyReference.cache
+D:\.NET\Day44\Bhaskar\BigIntegerPrac\BigIntegerPrac\obj\Debug\BigIntegerPrac.csproj.SuggestedBindingRedirects.cache
+D:\.NET\Day44\Bhaskar\BigIntegerPrac\BigIntegerPrac\obj\Debug\BigIntegerPrac.csproj.CoreCompileInputs.cache
+D:\.NET\Day44\Bhaskar\BigIntegerPrac\BigIntegerPrac\obj\Debug\BigIntegerPrac.exe
+D:\.NET\Day44\Bhaskar\BigIntegerPrac\BigIntegerPrac\obj\Debug\BigIntegerPrac.pdb

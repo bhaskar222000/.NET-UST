@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head><title></title></head>
+    <body>
+        <p id="result"></p>
+        <form id="myform">
+            <label>Name</label>
+            <input type="text" id="name" name="username"><br>
+            <label>age</label>
+            <input type="text" id="age" name="age"><br>
+            <label>mail</label>
+            <input type="text" id="mail" name="mail"><br>
+            <label>Password</label>
+            <input type="password" id="pass" name="Password"><br><br>
+            <button type="submit" onclick="myfun(event)">submit</button>
+            <button type=" button" value="delete" onclick="mydel()">Delete</button>
+
+        </form>
+
+        <script>
+            var myform= document.getElemenById("myform");
+            var result= document.getElementById("result");
+            function myfun(event){
+                myform.submit();
+                event.preventDefault();
+                result.innerHTML=" the result is: "
+            }
+            function mydel(){
+                alert("I am going to clear text box data only...");
+                document.getElementById("txtName").value = "";
+            }
+            
+     
+        </script>
+    </body>
+</html>

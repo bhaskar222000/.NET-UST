@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Title of the Document</title>
+  </head>
+  <body>
+    <form name="myForm">
+      <input name="firstName" value="1">
+      <input name="lastName" value="2">
+    </form>
+    <script>
+      // get the form
+      let form = document.forms.myForm; // <form name="myForm"> element
+      // get the element
+      let elem = form.elements.firstName; // <input name="firstName"> element      
+      alert(elem.value); // 1
+    </script>
+  </body>
+</html>

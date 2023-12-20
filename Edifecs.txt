@@ -1,0 +1,63 @@
+HIPPA rules
+
+PHI - protected health info
+
+EDI - Electronic Data Interchange
+
+For security we use edi
+
+* - Elements
+| - pipes
+
+sniprules - validation of edi 
+7 rules
+
+
+834 is some num or id which represents some sort of thing
+edi 834 - enrollment
+
+837- claim
+
+What EDIFECS Team do?
+edi (Validate then) to xml to java to hrp
+
+2 tools 
+1)EAM
+2)specbuilder - tool used to convert edi to xml
+5 things in specbuilder
+-guidelines
+-severity - to supress / enable the  eroors which are snip rules
+- map 
+-crosswalk
+- splitrules
+
+-one person will get unique num when enrolling
+INS-Y - subscriber
+INS-N - dependent
+
+specbuilder version 9.3.9
+New guideline - EDI - HIPPA - V5010A
+save as  .ecs - extension to save the file
+severity
+.esf extension file
+
+
+ISA
+06 - interchange sender
+08 - interchange reciever
+ST- transaction file . in that we can find what type of EDI file
+
+
+
+to validate edi file
+Analyzer/Data
+
+LDNS report - 5 group nodes
+ISA
+GS
+ST
+INS - member
+NM1 - 
+
+loop-segment-element
+
